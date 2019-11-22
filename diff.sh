@@ -27,7 +27,7 @@ function diff_dir()
 	local file_list_new=`ls ${newdir}`
 	#now in new work dir path, have to use absolutily path
 	local file_list_old=`ls $WORK_PATH_OLD_DIR/$olddir`
-
+	local file_exist
 
 	echo "file_list_new:$file_list_new"
 	echo "file_list_old:$file_list_old"
